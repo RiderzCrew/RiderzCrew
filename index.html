@@ -4,86 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riderz Crew</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        /* Alapvető stílusok */
+        /* Alapbeállítások */
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1d1f21, #444950);
+            background: linear-gradient(135deg, #121212, #333);
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-top: 50px;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 0 20px;
         }
 
         .button-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 300px;
         }
 
-        /* Gomb stílusok */
+        /* Gombok dizájnja */
         .button {
-            display: inline-block;
-            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
             font-size: 1.2rem;
             color: #fff;
             text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-            min-width: 180px;
+            border-radius: 50px;
             font-weight: bold;
+            transition: all 0.3s ease;
+            width: 100%;
         }
+
+        .button i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .facebook { background-color: #1877f2; }
+        .tiktok { background: linear-gradient(45deg, #69c9d0, #010101, #ee1d52); }
+        .instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
+        .youtube { background-color: #ff0000; }
 
         .button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
         }
 
-        .facebook {
-            background-color: #1877f2;
-        }
-
-        .tiktok {
-            background: linear-gradient(45deg, #69c9d0, #010101, #ee1d52);
-        }
-
-        .instagram {
-            background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-        }
-
-        .youtube {
-            background-color: #ff0000;
-        }
-
-        /* Responsív design */
+        /* Mobiloptimalizálás */
         @media (max-width: 768px) {
-            .button-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .button {
-                min-width: 80%;
+            h1 {
+                font-size: 1.6rem;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Csatlakozz a Riderz Crew közösséghez, hogy ne maradj le semmiről!</h1>
+    <h1>Csatlakozz a Riderz Crew közösséghez!</h1>
     <div class="button-container">
-        <a href="https://www.facebook.com/groups/632770822614617" class="button facebook">Facebook</a>
-        <a href="https://www.tiktok.com/@riderzcrew" class="button tiktok">TikTok</a>
-        <a href="https://www.instagram.com/riderz_crew/" class="button instagram">Instagram</a>
-        <a href="https://www.youtube.com/@Riderz_Crew" class="button youtube">YouTube</a>
+        <a href="https://www.facebook.com/groups/632770822614617" class="button facebook"><i class="fab fa-facebook"></i>Facebook</a>
+        <a href="https://www.tiktok.com/@riderzcrew" class="button tiktok"><i class="fab fa-tiktok"></i>TikTok</a>
+        <a href="https://www.instagram.com/riderz_crew/" class="button instagram"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://www.youtube.com/@Riderz_Crew" class="button youtube"><i class="fab fa-youtube"></i>YouTube</a>
     </div>
 </body>
 </html>
